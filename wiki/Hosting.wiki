@@ -1,3 +1,1 @@
-Temporary hosting for development will be at http://yesdatabas.myrpi.org/rw.  Cron job updates site with latest trunk.
-
-Until the redirect works properly, it is accessible at http://yesdatabas.myrpi.org:12038
+Temporary hosting for development will be at http://yesdatabas.myrpi.org/.  Cron job updates site with latest trunk.
