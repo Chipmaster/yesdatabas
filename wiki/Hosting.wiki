@@ -1,0 +1,1 @@
+Temporary hosting for development will be at http://yesdatabas.myrpi.org/rw.  Cron job updates site with latest trunk.
