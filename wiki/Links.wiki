@@ -3,5 +3,5 @@
 = Exporting =
 
 see links here:
-  *[http://nubyonrails.com/articles/dynamic-css Dynamic CSS on Ruby]
-  *[http://rubyrailsandwindows.blogspot.com/2009/06/rails-view-export-to-csv.html Exporting CSV, Excel, XML, etc]
+  *[http://nubyonrails.com/articles/dynamic-css] Dynamic CSS on Ruby
+  *[http://rubyrailsandwindows.blogspot.com/2009/06/rails-view-export-to-csv.html] Exporting CSV, Excel, XML, etc
