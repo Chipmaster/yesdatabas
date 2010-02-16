@@ -1,2 +1,4 @@
-Business Case:
-	Yesdatabas presents a lucrative opportunity for business.  By providing a hosting service, organizations can pay to host their user data in a user friendly manner on a Yesdatabas server customized to their needs.  A monthly fee for hosting will be charge as well as initial setup fees.  Alternately, users can pay for the company to set up and configure installations of Yesdatabas and maintain them on the user's own hosting.
+#summary How we profit from Yesdatabas
+
+==Business Case:==
+Yesdatabas presents a lucrative opportunity for business.  By providing a hosting service, organizations can pay to host their user data in a user friendly manner on a Yesdatabas server customized to their needs.  A monthly fee for hosting will be charge as well as initial setup fees.  Alternately, users can pay for the company to set up and configure installations of Yesdatabas and maintain them on the user's own hosting.
