@@ -6,56 +6,56 @@
 
  * Iteration 1 (2 weeks): Create database, user pages on site
 
- ** Iteration 2 (2 weeks): Implement admin accounts, picture upload for user
+ * Iteration 2 (2 weeks): Implement admin accounts, picture upload for user
 
- ** Iteration 3 (2 weeks): Allow custom cascading style sheets and export to csv/excel
+ * Iteration 3 (2 weeks): Allow custom cascading style sheets and export to csv/excel
 
- ** Iteration 4 (2 weeks): Alumni accounts, encrypt passwords
+ * Iteration 4 (2 weeks): Alumni accounts, encrypt passwords
 
 * Personnel:
 
-**Ruby on Rails Programmer: develops website software ($50k)
+ * Ruby on Rails Programmer: develops website software ($50k)
 
-**Database Administrator: maintains database for client(s) ($50k)
+ * Database Administrator: maintains database for client(s) ($50k)
 
-**Documentation Writer: writes software documentation ($40k)
+ * Documentation Writer: writes software documentation ($40k)
 
-**Usability Engineer/Analyst: researches and provides insight into usability of software 
+ * Usability Engineer/Analyst: researches and provides insight into usability of software 
 ($45k)
 
-**Customer Service/Tech Support: helps client(s) with software related problems ($35k)
+ * Customer Service/Tech Support: helps client(s) with software related problems ($35k)
 
-**Sales Representative: sells software package to client(s) ($25k + commission)
+ * Sales Representative: sells software package to client(s) ($25k + commission)
 
-**Accountant: maintains accounting records of firm’s cash flow, revenue & expenses, etc 
+ * Accountant: maintains accounting records of firm’s cash flow, revenue & expenses, etc 
 ($40k)
 
-**President: represents firm to investors ($60k)
+ * President: represents firm to investors ($60k)
 
-*Budget:
+* Budget:
 
-**Annually:
+ * Annually:
 
-***$15k rent
+  * $15k rent
 
-***$10k communications and utility bills
+  * $10k communications and utility bills
 
-***$355k in salaries
+  * $355k in salaries
 
-**Specifically for Project Startup:
+ * Specifically for Project Startup:
 
-***$10k initial equipment expenses
+  * $10k initial equipment expenses
 
-***$25k for 2 months salary to employees (estimated):
+  * $25k for 2 months salary to employees (estimated):
 
-****$8.3k to Programmer
+   * $8.3k to Programmer
 
-****$6.6k to Documentation Writer
+   * $6.6k to Documentation Writer
 
-****$7.5k to Usability Engineer
+   * $7.5k to Usability Engineer
 
-****$2.6k Buffer
+   * $2.6k Buffer
 
-*Other resources:
+* Other resources:
 
-**n/a
+ * n/a
