@@ -36,17 +36,17 @@
 
  * Annually:
 
-  * $15k rent
+   * $15k rent
 
-  * $10k communications and utility bills
+   * $10k communications and utility bills
 
-  * $355k in salaries
+   * $355k in salaries
 
  * Specifically for Project Startup:
 
-  * $10k initial equipment expenses
+   * $10k initial equipment expenses
 
-  * $25k for 2 months salary to employees (estimated):
+   * $25k for 2 months salary to employees (estimated):
 
    * $8.3k to Programmer
 
