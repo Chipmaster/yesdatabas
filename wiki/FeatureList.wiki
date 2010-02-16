@@ -1,3 +1,5 @@
+#summary A list of all the features we eventually want to have.
+
 Feature List:
 
   * Administrator user account controls
