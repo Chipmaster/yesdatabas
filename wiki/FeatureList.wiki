@@ -1,0 +1,69 @@
+Feature List:
+
+* Administrator user account controls
+    * Create new users
+    * Edit existing users
+        * List users Alphabetically
+    * Delete users
+    * Modify public or private privacy settings
+        * Some fields may be encrypted, like password
+
+* Allow easy access to changing user information
+    * Change password field
+    * Picture field
+    * Any information fields (shown below)
+
+* Detailed administrative reports in Excel CSV
+    * Statistics breakdown by (showing counts for each)
+        * Interest
+        * Greek Affiliation
+        * RPI medalists
+        * Scholarships
+        * Class year
+        * Major
+        * Minor
+        * Research
+        * Location (State)
+    * Name Tag Name Output
+        * First Name Last Name 'year
+        * Major
+            * ex. Dan Meteyer '10
+            * Computer Systems Engineering
+    * Entire Database output including all fields
+        * First Name
+        * Last Name
+        * Name Tag Name
+        * Class Year
+        * Birthday
+        * Medalist (Y/N)
+        * Legacy (Y/N)
+        * Biotech Access (Y/N)
+        * Greek Affiliation
+        * Shirt Size
+        * Campus Address (2 lines)
+        * City
+        * State
+        * Zip
+        * Local Phone
+        * Preferred Phone
+        * Email
+        * IM
+        * Home City
+        * Research (big txt field)
+        * Bio (big txt field)
+        * Clubs and Organizations
+        * Interests
+        * Regional Chapter
+        * Athletics
+        * Major
+        * Minor
+        * Scholarships
+* Profile pages that display specific user information as decided by the administrator
+    * Ex.  Some organizations may not want to disclose cell phone numbers or home addresses.
+    *  Alumni Account that allows any alumni to view all pages
+* Keep track of attendance
+* Accept input from CSV "Event wrap up forms"
+    * Update Attendance accordingly
+* Display Google calendar for all users
+    * Administrator should be able to add/edit events
+        
