@@ -2,15 +2,15 @@
 
 = Other Necessary Details =
 
-*Schedule Overview:
+* Schedule Overview:
 
-**Iteration 1 (2 weeks): Create database, user pages on site
+** Iteration 1 (2 weeks): Create database, user pages on site
 
-**Iteration 2 (2 weeks): Implement admin accounts, picture upload for user
+** Iteration 2 (2 weeks): Implement admin accounts, picture upload for user
 
-**Iteration 3 (2 weeks): Allow custom cascading style sheets and export to csv/excel
+** Iteration 3 (2 weeks): Allow custom cascading style sheets and export to csv/excel
 
-**Iteration 4 (2 weeks): Alumni accounts, encrypt passwords
+** Iteration 4 (2 weeks): Alumni accounts, encrypt passwords
 
 *Personnel:
 
