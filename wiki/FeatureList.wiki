@@ -1,6 +1,6 @@
 Feature List:
 
-* Administrator user account controls
+  * Administrator user account controls
     * Create new users
     * Edit existing users
         * List users Alphabetically
@@ -8,12 +8,12 @@ Feature List:
     * Modify public or private privacy settings
         * Some fields may be encrypted, like password
 
-* Allow easy access to changing user information
+  * Allow easy access to changing user information
     * Change password field
     * Picture field
     * Any information fields (shown below)
 
-* Detailed administrative reports in Excel CSV
+  * Detailed administrative reports in Excel CSV
     * Statistics breakdown by (showing counts for each)
         * Interest
         * Greek Affiliation
@@ -59,15 +59,15 @@ Feature List:
         * Minor
         * Scholarships
 
-* Profile pages that display specific user information as decided by the administrator
+  * Profile pages that display specific user information as decided by the administrator
     * Ex.  Some organizations may not want to disclose cell phone numbers or home addresses.
     *  Alumni Account that allows any alumni to view all pages
 
-* Keep track of attendance
+  * Keep track of attendance
 
-* Accept input from CSV "Event wrap up forms"
+  * Accept input from CSV "Event wrap up forms"
     * Update Attendance accordingly
 
-* Display Google calendar for all users
+  * Display Google calendar for all users
     * Administrator should be able to add/edit events
         
