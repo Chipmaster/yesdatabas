@@ -1,0 +1,47 @@
+#summary A list of use cases for the system.
+
+=Actors and Goals=
+
+==Actors: User==
+Goals: Login, Setup Account, Edit personal information
+
+==Actor: Administrator==
+Goals: Login, Manage users, generate reports, export to excel
+
+=Use Cases=
+*Use Case: Login*
+
+ID: UC1
+
+Description: Provides authentication for the website.
+
+Precondition: The user is not currently logged in.
+
+  # View the Login page.
+  # Enter the user name and password.
+  # Press the Login Button.
+  # If the user's name and password are valid.
+    # Login the user.
+  # Else
+    # Return the user to the Login page where a message is displayed about incorrect username or password.
+
+Postcondition: The user is authenticated.
+
+
+*Use Case: Setup Account*
+
+ID: UC2
+
+Description: A new user sets up an account and puts in their information.
+
+Precondition: 
+  * Administrator has already added the user with the New User use case.
+  * The User has never logged in before.
+
+  # Recieve user name and password in email
+  # Click on the link in the email to jump to the login page
+  # Authenticate with the Login Use Case.
+  # Enter into the first time setup page
+  # Enter a new password and press submit
+
+Postconditions: The user is at the personal information page.
