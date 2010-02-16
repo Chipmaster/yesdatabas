@@ -4,7 +4,7 @@
 
 * Schedule Overview:
 
- ** Iteration 1 (2 weeks): Create database, user pages on site
+ * Iteration 1 (2 weeks): Create database, user pages on site
 
  ** Iteration 2 (2 weeks): Implement admin accounts, picture upload for user
 
