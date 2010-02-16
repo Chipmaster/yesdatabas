@@ -58,12 +58,16 @@ Feature List:
         * Major
         * Minor
         * Scholarships
+
 * Profile pages that display specific user information as decided by the administrator
     * Ex.  Some organizations may not want to disclose cell phone numbers or home addresses.
     *  Alumni Account that allows any alumni to view all pages
+
 * Keep track of attendance
+
 * Accept input from CSV "Event wrap up forms"
     * Update Attendance accordingly
+
 * Display Google calendar for all users
     * Administrator should be able to add/edit events
         
