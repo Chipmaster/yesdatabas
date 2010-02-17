@@ -5,10 +5,15 @@
 == Setting up Ruby ==
 
 *Download Ruby from http://rubyinstaller.rubyforge.org/
+
 *When installing, make sure you add ruby and gems to the Windows Path
+
 *C:\> gem install rails --include-dependencies
+
 *C:\> gem install -v=2.3.4 rails
+
 *C:\> gem install sqlite3-ruby
+
 *Download the [http://www.sqlite.org/sqlitedll-3_6_22.zip SQLite3 DLL], unzip it, and copy it to your Ruby\bin folder. 
 
 == Initializing the Project ==
