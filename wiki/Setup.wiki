@@ -14,7 +14,7 @@
 
     * C:\> gem install sqlite3-ruby
 
-    * Download the [http://www.sqlite.org/sqlitedll-3_6_22.zip SQLite3 DLL], unzip it, and copy it to your Ruby\bin folder. 
+    * Download the [http://www.sqlite.org/sqlitedll-3_6_22.zip SQLite3 DLL], unzip it, and copy it to your C:\Ruby\bin folder. 
 
   == Initializing the Project ==
     * C:\> svn checkout https://yesdatabas.googlecode.com/svn/trunk/ yesdatabas --username YourUserName
