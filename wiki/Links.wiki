@@ -1,4 +1,8 @@
-#summary links found on how to implement some of our features.
+#summary links
+
+= Hosting =
+
+  * [http://yesdatabas.myrpi.org/ Cron job updates site with latest trunk] 
 
 = Exporting =
 
