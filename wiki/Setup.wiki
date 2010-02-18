@@ -19,5 +19,7 @@
   == Initializing the Project ==
     * C:\> svn checkout https://yesdatabas.googlecode.com/svn/trunk/ yesdatabas --username YourUserName
 
+    * You'll need your googlecode password from here:  https://code.google.com/hosting/settings
+
   == Final Thoughts ==
     We have to standardize which versions of software we are using.  Since the hosting we have uses specific versions of ruby and rails, we should standardize around this.
