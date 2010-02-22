@@ -2,3 +2,5 @@
 
 ==Business Case:==
 Yesdatabas presents a lucrative opportunity for business.  By providing a hosting service, organizations can pay to host their user data in a user friendly manner on a Yesdatabas server customized to their needs.  A monthly fee for hosting will be charge as well as initial setup fees.  Alternately, users can pay for the company to set up and configure installations of Yesdatabas and maintain them on the user's own hosting.
+
+Yesdatabas will be a desirable tool for small clubs and organizations like the Renssealer Student Union, or Red and White.  Alternative systems exist and are currently being used by these clubs.  Red and White uses a custom built content management system developed in ASPX.  Drupal also provides a generic open and free content management system.  We believe  Yesdatabas is a better alternative than these for small organizations because it will port better to different uses than the ASPX and easier to install and maintain than a generic Drupal installation.
