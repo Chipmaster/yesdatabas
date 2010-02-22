@@ -13,3 +13,12 @@ Ruby - A high level programming language used to design and build yesdatabas.
 
 
 Rails - A development stack providing database, webserver, and other important utilities to host our project.
+
+
+Administrator - The administrator will be an entrusted individual responsible for configuring and maintaining each installation of yesdatabas.  They will also enable and disable user accounts as necessary.
+
+
+Client - Each user will be allowed to input the required data about them into the installation of yesdatabas for it to maintain.
+
+
+Configurable Data Fields - These will be text boxes, drop down boxes, and other input fields that can be added and removed and named by an Administrator.
