@@ -4,7 +4,7 @@ Feature List:
 
   * Administrator user account controls including an administrator interface that allows the administrator to create new users, edit/delete existing users, list users alphabetically and modify what fields are displayed.
 
-  * Allows easy access to changing user information including password, picture, and any  of the client-side customizable informational fields.
+  * Allows easy access to changing user information including password, picture, and any  of the client-side customizable information fields.
 
   * Fully customizable detailed statistical reports in Excel CSV format.  Such reports are designed to meet each client's needs, but for example could include a breakdown with the number of users by data field.  
   
