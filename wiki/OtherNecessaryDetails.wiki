@@ -10,10 +10,10 @@
   # 4/11-4/24 (2 weeks): Finishing touches, extra features such as Alumni accounts
 
 ==Personnel:==
-  * Ruby on Rails Programmer: develops website software ($50k)
-  * Database Administrator: maintains database for client(s) ($50k)
-  * Documentation Writer: writes software documentation ($40k)
-  * Usability Engineer: researches, provides insight into software usability ($45k)
+  * Ruby on Rails Programmer: develops website software ($50k) -- Pat
+  * Database Administrator: maintains database for client(s) ($50k) -- Dan
+  * Documentation Writer: writes software documentation ($40k) -- Corey
+  * Usability Engineer: researches, provides insight into software usability ($45k) -- Mike
   * Customer Service/Tech Support: helps client(s) with software related problems ($35k)
   * Sales Representative: sells software package to client(s) ($25k + commission)
   * Accountant: maintains accounting records of firm’s cash flow, revenue & expenses, etc ($40k)
@@ -30,7 +30,7 @@
       * $8.3k to Programmer
       * $6.6k to Documentation Writer
       * $7.5k to Usability Engineer
-      * $2.6k Buffer
+      * $2.6k Bonuses
 
 ==Other resources:==
   * n/a
