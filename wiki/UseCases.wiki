@@ -36,11 +36,12 @@ Description: A new user sets up an account and puts in their information.
 Precondition: 
   * Administrator has already added the user with the New User use case.
   * The User has never logged in before.
+  * The User has authenticated with the Login Use Case
 
-  # Recieve user name and password in email
-  # Click on the link in the email to jump to the login page
-  # Authenticate with the Login Use Case.
-  # Enter into the first time setup page
-  # Enter a new password and press submit
+  # User enters into the first time setup page
+  # User enters a new password and submits
+  # If the user doesn't enter a new password
+    * System continues to prompt for a new password
+
 
 Postconditions: The user is at the personal information page.
