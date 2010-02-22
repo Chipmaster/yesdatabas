@@ -1,0 +1,11 @@
+#summary A comprehensive list of the domain terms used within Yesdatabas
+
+Excel CSV - A file containing content separated by commas.  Can be used externally of YesDatabas by programs such as Microsoft Excel.
+
+
+SSL - Secure Sockets Layer, a technology enabling us to establish encrypted connections with clients.  For use when authenticating users.
+
+
+Red and White - A target organization that we plan on building a customized version for.  The organization focuses on alumni networking at Rensselaer Polytechnic Institute.
+
+
