@@ -15,15 +15,14 @@ ID: UC1
 
 Description: Provides authentication for the website.
 
-Precondition: The user is not currently logged in.
+Precondition: The system displays a login page.
 
-  # View the Login page.
-  # Enter the user name and password.
-  # Press the Login Button.
-  # If the user's name and password are valid.
+  # User enters in name and password.
+  # User Press the Login Button.
+  # System determines that user's name and password are valid.
     # Login the user.
   # Else
-    # Return the user to the Login page where a message is displayed about incorrect username or password.
+    # System displays a message to the User.
 
 Postcondition: The user is authenticated.
 
