@@ -17,3 +17,7 @@
 = SVN =
 
   * [http://xahlee.org/UnixResource_dir/svn.html SVN with google code specific examples]
+
+= Ruby on Rails Tutorial = 
+
+  * [http://twiki.cs.rpi.edu/twiki/bin/view/CourseDatabase/LearningRoR RoR Tutorial]
