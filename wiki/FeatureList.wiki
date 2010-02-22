@@ -2,74 +2,20 @@
 
 Feature List:
 
-  * Administrator user account controls
-    * Create new users
-    * Edit existing users
-        * List users Alphabetically
-    * Delete users
-    * Modify public or private privacy settings
-        * Some fields may be encrypted, like password
+  * Administrator user account controls including an administrator interface that allows the administrator to create new users, edit/delete existing users, list users alphabetically and modify what fields are displayed.
 
-  * Allow easy access to changing user information
-    * Change password field
-    * Picture field
-    * Any information fields (shown below)
+  * Allows easy access to changing user information including password, picture, and any  of the client-side customizable informational fields.
 
-  * Detailed administrative reports in Excel CSV
-    * Statistics breakdown by (showing counts for each)
-        * Interest
-        * Greek Affiliation
-        * RPI medalists
-        * Scholarships
-        * Class year
-        * Major
-        * Minor
-        * Research
-        * Location (State)
-    * Name Tag Name Output
-        * First Name Last Name 'year
-        * Major
-            * ex. Dan Meteyer '10
-            * Computer Systems Engineering
-    * Entire Database output including all fields
-        * First Name
-        * Last Name
-        * Name Tag Name
-        * Class Year
-        * Birthday
-        * Medalist (Y/N)
-        * Legacy (Y/N)
-        * Biotech Access (Y/N)
-        * Greek Affiliation
-        * Shirt Size
-        * Campus Address (2 lines)
-        * City
-        * State
-        * Zip
-        * Local Phone
-        * Preferred Phone
-        * Email
-        * IM
-        * Home City
-        * Research (big txt field)
-        * Bio (big txt field)
-        * Clubs and Organizations
-        * Interests
-        * Regional Chapter
-        * Athletics
-        * Major
-        * Minor
-        * Scholarships
+  * Fully customizable detailed statistical reports in Excel CSV format.  Such reports are designed to meet each client's needs, but for example could include a breakdown with the number of users by data field.  
+  
+  * Secure Login using SSL  protocol
 
-  * Profile pages that display specific user information as decided by the administrator
-    * Ex.  Some organizations may not want to disclose cell phone numbers or home addresses.
-    *  Alumni Account that allows any alumni to view all pages
+  * Allows users to browse other profile pages that display specific user information as decided by the administrator.  For example, some organizations may not want to disclose cell phone numbers or home addresses.  For our test case, we will include an Alumni Account that allows any alumni to view all of the members' pages.
 
-  * Keep track of attendance
+  * Embedded google map to post any group events, meetings, or deadlines. 
 
-  * Accept input from CSV "Event wrap up forms"
-    * Update Attendance accordingly
+  * In our example case, each member will have an attendance variable that will be modified when attendance is updated.  
 
-  * Display Google calendar for all users
-    * Administrator should be able to add/edit events
+  * Accept input from Excel CSV format, specifically Google Docs, to allow for an integration of data from multiple web pages.  For example, in Red and White, each member must submit an "Event Wrap Up Form" for each event they attend.  By accepting raw input from Google Docs, personnel time will be saved.  With each input from Google Docs, the database will also update event attendance.
+
         
