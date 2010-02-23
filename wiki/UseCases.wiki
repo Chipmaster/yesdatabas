@@ -6,7 +6,7 @@
 Goals: Login, Setup Account, Edit personal information
 
 ==Actor: Administrator==
-Goals: Login, Manage users, generate reports, export to excel/XML, import data
+Goals: Login, Manage users, generate reports, export to excel/XML, import data, manage data fields, manage display layout
 
 =Use Cases=
 *Use Case: Login*
