@@ -26,11 +26,11 @@
     * $355k in salaries
   * Specifically for Project Startup:
     * $10k initial equipment expenses
-    * $25k for 2 months salary to employees (estimated):
-      * $8.3k to Programmer
-      * $6.6k to Documentation Writer
-      * $7.5k to Usability Engineer
-      * $2.6k Bonuses
-
+    * $35k for 2 months salary to employees (estimated):
+      * $8k to Programmer
+      * $8k to Documentation Writer
+      * $8k to Usability Engineer
+      * $8k to Database Administrator
+      * $53 Bonuses
 ==Other resources:==
   * n/a
