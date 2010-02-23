@@ -12,7 +12,7 @@ Red and White - Red and White is a target organization that we plan on building 
 Ruby - Ruby is a high level programming language used to design and build yesdatabas.
 
 
-Rails - Rails is a development stack providing database, webserver, and other important utilities to host our project.
+Rails - Rails is a development stack providing database, web server, and other important utilities to host our project.
 
 
 Administrator - The administrator will be an entrusted individual responsible for configuring and maintaining each installation of yesdatabas.  They will also enable and disable user accounts as necessary.
