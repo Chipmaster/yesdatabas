@@ -1,6 +1,6 @@
 #summary A comprehensive list of the domain terms used within yesdatabas
 
-Excel CSV - A file containing content separated by commas.  Can be used externally of yesDatabas by programs such as Microsoft Excel.
+Excel CSV - A file containing content separated by commas.  Can be used externally of yesdatabas by programs such as Microsoft Excel.
 
 
 SSL - Secure Sockets Layer, a technology enabling us to establish encrypted connections with clients.  For use when authenticating users.
