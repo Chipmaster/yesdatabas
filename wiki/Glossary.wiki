@@ -1,18 +1,18 @@
 #summary A comprehensive list of the domain terms used within yesdatabas
 
-Excel CSV - A file containing content separated by commas.  Can be used externally of yesdatabas by programs such as Microsoft Excel.
+Excel CSV - A file that contains content separated by commas.  It can be used externally of yesdatabas by programs such as Microsoft Excel.
 
 
-SSL - Secure Sockets Layer, a technology enabling us to establish encrypted connections with clients.  For use when authenticating users.
+SSL - Secure Sockets Layer is a technology enabling us to establish encrypted connections with clients.  It's for use when authenticating users.
 
 
-Red and White - A target organization that we plan on building a customized version for.  The organization focuses on alumni networking at Rensselaer Polytechnic Institute.
+Red and White - Red and White is a target organization that we plan on building a customized version for.  The organization focuses on alumni networking at Rensselaer Polytechnic Institute.
 
 
-Ruby - A high level programming language used to design and build yesdatabas.
+Ruby - Ruby is a high level programming language used to design and build yesdatabas.
 
 
-Rails - A development stack providing database, webserver, and other important utilities to host our project.
+Rails - Rails is a development stack providing database, webserver, and other important utilities to host our project.
 
 
 Administrator - The administrator will be an entrusted individual responsible for configuring and maintaining each installation of yesdatabas.  They will also enable and disable user accounts as necessary.
