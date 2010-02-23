@@ -4,8 +4,8 @@
 
 ==Schedule Overview:==
 ===Iterations===
-  # 2/24-3/5 (10 days): Set up Ruby on Rails, design database schema, admin management page
-  # 3/15-3/27 (~2 weeks): Allowing custom CSS, picture upload for user, export to csv/excel
+  # 2/24-3/5 (10 days): Set up Ruby on Rails, design database schema, tweak user page, admin management page
+  # 3/15-3/27 (~2 weeks): Allowing custom CSS, picture upload for user
   # 3/28-4/13 (2 weeks): Allow custom cascading style sheets and export to csv/excel
   # 4/11-4/24 (2 weeks): Finishing touches, extra features such as Alumni accounts
 
