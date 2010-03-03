@@ -4,14 +4,15 @@
 
 ==Schedule Overview:==
 ===Iterations===
-  # 2/24-3/5 (10 days / 20 MH): Set up Ruby on Rails (2 MH), design database schema (5 MH), tweak user page (3 MH), admin management page (10 MH)
-   * Takes place during Elaboration
-  # 3/15-3/27 (2 weeks / 20 MH): Allowing custom CSS (10 MH), picture upload for user (10 MH) 
-   * Takes place during Construction
-  # 3/28-4/13 (2 weeks / 5 MH ): Allow export to csv/excel (5 MH) 
-   * Takes place during Construction
-  # 4/11-4/24 (2 weeks / 25 MH): Finishing touches (15 MH), extra features such as Alumni accounts (10 MH) 
-   * Takes place during Transition
+  * Inception:
+   # 2/15-3/5 (15 MH): Set up Ruby on Rails (5 MH), develop use-cases (10 MH)
+  * Elaboration:
+   # 3/15-3/28 (20 MH): Design database schema (5 MH), tweak user page (5 MH), admin management page (10 MH)
+  * Construction:
+   # 3/29-4/11 (25 MH): Allowing custom CSS (10 MH), picture upload for user (10 MH), export to csv/excel (5 MH)
+  * Transition:
+   # 4/12-5/1 (25 MH): Finishing touches (15 MH), extra features such as Alumni accounts (10 MH) 
+
   * MH = man-hour
 
 ==Personnel:==
