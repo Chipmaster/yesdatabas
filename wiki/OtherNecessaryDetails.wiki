@@ -5,7 +5,7 @@
 ==Schedule Overview:==
 ===Iterations===
   # 2/24-3/5 (10 days / 20 MH): Set up Ruby on Rails (2 MH), design database schema (5 MH), tweak user page (3 MH), admin management page (10 MH)
-   * Takes place during Elaboration]
+   * Takes place during Elaboration
   # 3/15-3/27 (2 weeks / 20 MH): Allowing custom CSS (10 MH), picture upload for user (10 MH) 
    * Takes place during Construction
   # 3/28-4/13 (2 weeks / 5 MH ): Allow export to csv/excel (5 MH) 
