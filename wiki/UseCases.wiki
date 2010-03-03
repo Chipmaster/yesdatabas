@@ -31,12 +31,13 @@ Postcondition: The user is authenticated.
 
 ID: UC2
 
-Description: A new user sets up an account and puts in their information.
+Description: A new user sets up an account and changes their temporary password.
 
 Precondition: 
   * Administrator has already added the user with the New User use case.
+    * This implies that the User has been emailed with a user name and temporary password.
   * The User has never logged in before.
-  * The User has authenticated with the Login Use Case
+  * The User has authenticated with the Login Use Case with their temp password.
 
   # User enters into the first time setup page
   # User enters a new password and submits
