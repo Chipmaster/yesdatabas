@@ -2,7 +2,7 @@
 
 =Actors and Goals=
 
-==Actors: User==
+==Actor: User==
 Goals: Login, Setup Account, Edit personal information
 
 ==Actor: Administrator==
