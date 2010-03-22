@@ -57,3 +57,20 @@ Precondition:
 
 
 Postconditions: The user is at the personal information page.
+
+
+*Use Case: Edit Personal Information*
+
+ID: UC3
+
+Description: Allows users to edit their profiles containing personal information.
+
+Precondition: The system displays a home page.
+
+  # User clicks "Edit" information button.
+  # User is taken to a page where he can edit his profile.
+  # User types data into text boxes/fields.
+  # User clicks "Submit" button.
+  # System stores all data from boxes/fields into database.
+
+Postcondition: The user is taken back to the home page.
