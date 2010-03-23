@@ -67,7 +67,7 @@ Description: Allows users to edit their profiles containing personal information
 
 Precondition: The system displays a home page.
 
-  # User clicks "Edit" button.
+  # User clicks "Edit" link.
   # User is taken to a page where he can edit his profile.
   # User types data into text boxes/fields.
   # User clicks "Submit" button.
@@ -86,7 +86,7 @@ Description: Allows administrators to create or delete new users.
 
 Precondition: The system displays a home page.
 
-  # Admin clicks "Manage Users" button.
+  # Admin clicks "Manage Users" link.
   # Admin is taken to a page where he views all current users.
   # Admin may click "Delete" next to a displayed user.
     # If so, user is deleted from the database.
@@ -107,7 +107,7 @@ Description: Allows admin to view all or some of the user data.
 
 Precondition: The system displays a home page.
 
-  # Admin clicks "Generate Reports" button.
+  # Admin clicks "Generate Reports" link.
   # Admin is taken to a page where he views all user attributes.
     # Admin selects which attributes he wishes to view.
   # Admin clicks "View" button.
@@ -122,11 +122,51 @@ ID: UC6
 
 Description: Allows admin export data to an Excel or CSV.
 
-Precondition: The system displays a Reports page as a result of Use Case "Generate Reports" (UC6).
+Precondition: The system displays a Reports page as a result of Use Case "Generate Reports" (UC5).
 
-  # Admin clicks "Export" button.
+  # Admin clicks "Export" link.
   # Admin is prompted for a location to save the exported file to.
   # Ruby library handles exportation.
   # File is saved to specified location.
+
+Postcondition: The admin is taken back to the home page.
+
+
+
+*Use Case: Manage Data Fields*
+
+ID: UC7
+
+Description: Allows admin to add or remove custom data fields.
+
+Precondition: The system displays a home page.
+
+  # Admin clicks "Manage Custom Data Fields" link.
+  # Admin is taken to a page where he views all custom data fields.
+  # Admin may click "Edit" next to a data field's name.
+    # Data field's name may be edited in a text box.
+    # Admin clicks "Submit" and data field is renamed.
+  # Admin may click "Delete" next to a data field's name.
+    # Custom data field is dropped from the database.
+  # Admin may click "Create New" button.
+    # Creates a name for the field and a type.
+    # Admin clicks "Submit" and custom data field is added to the database
+
+Postcondition: The admin remains on the current page.
+
+
+
+*Use Case: Manage Display Layout*
+
+ID: UC8
+
+Description: Allows admin upload a custom CSS file.
+
+Precondition: The system displays a home page.
+
+  # Admin clicks "Manage Display Layout" button.
+  # A page is displayed containing information about CSS (Cascading Style Sheets)
+  # Admin selects a file from his local machine and clicks the "Upload" button
+  # The CSS is implemented and the website layout changes accordingly.
 
 Postcondition: The admin is taken back to the home page.
