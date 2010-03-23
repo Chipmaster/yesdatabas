@@ -95,4 +95,38 @@ Precondition: The system displays a home page.
     # User is created in system.
   # Admin clicks "Finish" button.
 
-Postcondition: The user is taken back to the home page.
+Postcondition: The admin is taken back to the home page.
+
+
+
+*Use Case: Generate Reports*
+
+ID: UC5
+
+Description: Allows admin to view all or some of the user data.
+
+Precondition: The system displays a home page.
+
+  # Admin clicks "Generate Reports" button.
+  # Admin is taken to a page where he views all user attributes.
+    # Admin selects which attributes he wishes to view.
+  # Admin clicks "View" button.
+
+Postcondition: The admin is taken to a page listing the specified user attributes.
+
+
+
+*Use Case: Export*
+
+ID: UC6
+
+Description: Allows admin export data to an Excel or CSV.
+
+Precondition: The system displays a Reports page as a result of Use Case "Generate Reports" (UC6).
+
+  # Admin clicks "Export" button.
+  # Admin is prompted for a location to save the exported file to.
+  # Ruby library handles exportation.
+  # File is saved to specified location.
+
+Postcondition: The admin is taken back to the home page.
