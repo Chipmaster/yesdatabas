@@ -27,4 +27,4 @@ Functional requirements and MoSCoW Ranking
 
 11. Incorporate Javascript - Won't
 
-12. Non user data on the web page must be less than 200KB
+12. Non user data on the web page must be less than 200KB - Should
