@@ -15,7 +15,7 @@ Functional requirements and MoSCoW Ranking
 
 5. Page generation under 200ms - Must
 
-6. Page Size less than 200KB - Should
+6. Allow users to upload a profile picture - Could
 
 7. Backup/Recovery Tools - Could
 
@@ -26,3 +26,5 @@ Functional requirements and MoSCoW Ranking
 10. Compatible with Rails 2.3.4 - Must
 
 11. Incorporate Javascript - Won't
+
+12. Non user data on the web page must be less than 200KB
