@@ -28,3 +28,7 @@ Functional requirements and MoSCoW Ranking
 11. Incorporate Javascript - Won't
 
 12. Non user data on the web page must be less than 200KB - Should
+
+13. Support Firefox 3+, IE 7+ at a minimum. - Must
+
+14. Validate input - Should
