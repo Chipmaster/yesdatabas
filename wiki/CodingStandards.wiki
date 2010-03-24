@@ -1,0 +1,4 @@
+#summary A Ruby Style Guide we will conform to
+
+
+http://www.caliban.org/ruby/rubyguide.shtml#style
