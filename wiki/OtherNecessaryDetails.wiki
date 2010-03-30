@@ -15,6 +15,11 @@
 
   * MH = man-hour
 
+
+NEW:
+
+
+
 ==Personnel:==
   * Ruby on Rails Programmer: develops website software -- Pat
   * Database Administrator: maintains database for client(s) -- Dan
