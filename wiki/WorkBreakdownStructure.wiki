@@ -1,17 +1,17 @@
-#summary One-sentence summary of this page.
+#summary Detailed breakdown of the work required to achieve our goals.
 
 =yesdatabas=
-==User==
+===User===
   * Complete data model
   * Password encryption
-==Admin==
+===Admin===
   * User creation
   * Add custom fields
-==Pages==
-  * Display
-  * Tweak
-  * Links
-==Other==
+===Pages===
+  * Display: Get Red&White demo working
+  * Clean up, ensure that pages don't crash, etc.
+  * Links, allow easy access to allowed pages
+===Other===
   * Import CSS
   * Export CSV
   * Reports
