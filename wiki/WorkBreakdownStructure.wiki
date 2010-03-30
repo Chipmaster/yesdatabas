@@ -2,16 +2,16 @@
 
 =yesdatabas=
 ==User==
-Complete data model
-Password encryption
+  * Complete data model
+  * Password encryption
 ==Admin==
-User creation
-Add custom fields
+  * User creation
+  * Add custom fields
 ==Pages==
-Display
-Tweak
-Links
+  * Display
+  * Tweak
+  * Links
 ==Other==
-Import CSS
-Export CSV
-Reports
+  * Import CSS
+  * Export CSV
+  * Reports
