@@ -21,3 +21,5 @@
 = Ruby on Rails Tutorial = 
 
   * [http://twiki.cs.rpi.edu/twiki/bin/view/CourseDatabase/LearningRoR RoR Tutorial]
+  * [http://guides.rubyonrails.org/getting_started.html Getting Started with Rails]
+  * [http://guides.rubyonrails.org/layouts_and_rendering.html Layouts and Rendering in Rails]
