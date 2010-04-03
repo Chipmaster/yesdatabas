@@ -8,8 +8,9 @@ class UserController < ApplicationController
 				session[:user_id] = user.id
 				if user.usertype == 'admin'
 					session[:adminuser] = true
+					redirect_to :controller => :users
 				end
-				redirect_to :action => :index
+				redirect_to :controller => :users, :action => user.id
 			else
 				flash.now[:notice] = "Invalid user/password combination"
 			end
