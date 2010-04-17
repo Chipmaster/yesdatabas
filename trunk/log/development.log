@@ -637,3 +637,251 @@ Processing UsersController#index (for 127.0.0.1 at 2010-04-03 15:22:04) [GET]
 Rendering template within layouts/users
 Rendering users/index
 Completed in 156ms (View: 140, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (159.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "password" varchar(255), "usertype" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (86.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100329234114')[0m
+  [4;35;1mSQL (86.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100329234012')[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-07 16:44:58) [GET]
+Rendering user/login
+Completed in 2755ms (View: 59, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-07 16:45:01) [GET]
+
+ActionController::RoutingError (No route matches "/login.css" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-07 16:45:14) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"kI6ONZctrVQGAHh6UgLYJ3j0/YsULIuVdDcOneXkniQ=", "password"=>"csmc1989", "email"=>"mcclyc@rpi.edu"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = 'csmc1989' AND "users"."email" = 'mcclyc@rpi.edu') LIMIT 1[0m
+Rendering user/login
+Completed in 50ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-07 16:45:15) [GET]
+
+ActionController::RoutingError (No route matches "/login.css" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  server:3
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-07 16:45:18) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"kI6ONZctrVQGAHh6UgLYJ3j0/YsULIuVdDcOneXkniQ=", "password"=>"12345", "email"=>"mcclyc@rpi.edu"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = '12345' AND "users"."email" = 'mcclyc@rpi.edu') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-07 16:45:19) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 60ms (View: 49, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-04-07 16:45:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-07 16:45:43) [PUT]
+  Parameters: {"user"=>{"usertype"=>"admin", "lastname"=>"mcclymonds", "firstname"=>"corey", "password"=>"23456", "email"=>"mcclyc@rpi.edu"}, "commit"=>"Update", "authenticity_token"=>"kI6ONZctrVQGAHh6UgLYJ3j0/YsULIuVdDcOneXkniQ=", "id"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'mcclyc@rpi.edu' AND "users".id <> 2) LIMIT 1[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE "users" SET "password" = '23456', "updated_at" = '2010-04-07 20:45:43' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/users/2
+Completed in 198ms (DB: 2) | 302 Found [http://localhost/users/2]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-07 16:45:44) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-07 16:45:47) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 40ms (View: 30, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-17 14:24:40) [GET]
+Rendering user/login
+Completed in 3267ms (View: 162, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 14:24:43) [GET]
+
+ActionController::RoutingError (No route matches "/login.css" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (70.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100329234012)
+Migrating to AddUsers (20100329234114)
+Migrating to CreateDataFields (20100417191122)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "data_fields" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "value" varchar(255), "user_id" integer, "field_type_id" integer) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100417191122')[0m
+Migrating to CreateFieldTypes (20100417195837)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "field_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100417195837')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("data_fields")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("field_types")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-17 16:31:01) [GET]
+Rendering user/login
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 16:31:01) [GET]
+
+ActionController::RoutingError (No route matches "/login.css" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-17 16:31:06) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"i2jncqAWxh4tTbQKDfALgawmK9TU7G1zC5+J6f4wfUE=", "password"=>"12345", "email"=>"mcclyc@rpi.edu"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = '12345' AND "users"."email" = 'mcclyc@rpi.edu') LIMIT 1[0m
+Rendering user/login
+Completed in 180ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 16:31:07) [GET]
+
+ActionController::RoutingError (No route matches "/login.css" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-04-17 16:31:15) [POST]
+  Parameters: {"commit"=>"Login", "authenticity_token"=>"i2jncqAWxh4tTbQKDfALgawmK9TU7G1zC5+J6f4wfUE=", "password"=>"23456", "email"=>"mcclyc@rpi.edu"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = '23456' AND "users"."email" = 'mcclyc@rpi.edu') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-17 16:31:16) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 96ms (View: 84, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-17 16:31:36) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 87ms (View: 74, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-17 16:31:41) [GET]
+  [4;35;1mUser Load (5.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 54ms (View: 38, DB: 5) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-17 16:31:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://localhost/users/1]
