@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="login.css" />
+<%= stylesheet_link_tag :all %>
 
 <h1>User Login</h1>
 
@@ -14,5 +14,6 @@
 <p><label for="password">Password:</label><br/>
 <%= password_field_tag :password, params[:password]  %></p>
 <!--[eoform:user]-->
-<%= submit_tag 'Login' %>
+
+<p><%= submit_tag 'Login' %></p>
 <% end %>
