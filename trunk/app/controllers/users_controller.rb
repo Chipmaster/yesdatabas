@@ -24,24 +24,20 @@ class UsersController < ApplicationController
   # GET /users/new
   # GET /users/new.xml
   def new
-    @user = User.new
-
+         
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @user }
     end
   end
 
-  # GET /users/1/edit
-  def edit
-    @user = User.find(params[:id])
-  end
-
-  # POST /users
-  # POST /users.xml
   def create
     @user = User.new(params[:user])
-
+    @user.password = params[:password]
+    @user.email = params[:email]
+    @user.usertype = params[:usertype]
+    @user.save!
+    
     respond_to do |format|
       if @user.save
         flash[:notice] = 'User was successfully created.'
@@ -53,6 +49,12 @@ class UsersController < ApplicationController
       end
     end
   end
+
+  # GET /users/1/edit
+  def edit
+    @user = User.find(params[:id])
+  end
+
 
   # PUT /users/1
   # PUT /users/1.xml
