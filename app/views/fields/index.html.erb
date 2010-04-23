@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag :all %>
+
+<h1>Custom Fields</h1>
+<% @fields.each do |field| %>
+  <div id="field-<%= field.name %>">
+    <% form_tag :action => "edit" do %>
+      <%= hidden_field_tag :previous, field.id %>
+      <%= text_field_tag(:name, field.name) %>
+      <%= submit_tag("Edit") %>
+    <% end %>
+    <% form_tag :action => "destroy" do %>
+      <%= hidden_field_tag :destroy, field.id %>
+      <%= submit_tag("Destroy") %>
+    <% end %>
+  </div>
+<% end %>
+
+<% form_tag :action => 'new' do %>
+  <%= label_tag(:name, "New custom field:") %>
+  <%= text_field_tag(:name) %>
+  <%= submit_tag("Add") %>
+<% end %>
