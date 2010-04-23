@@ -7,7 +7,6 @@
     <th>Email</th>
     <th>Firstname</th>
     <th>Lastname</th>
-    <th>Password</th>
     <th>Usertype</th>
   </tr>
 
@@ -16,7 +15,6 @@
     <td><%=h user.email %></td>
     <td><%=h user.firstname %></td>
     <td><%=h user.lastname %></td>
-    <td><%=h user.password %></td>
     <td><%=h user.usertype %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
