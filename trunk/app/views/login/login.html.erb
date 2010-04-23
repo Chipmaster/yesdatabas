@@ -6,7 +6,7 @@
 <p> <b><%= flash[:notice] %></b></p>
 <% end %>
 
-<% form_tag :action => 'login' do %>
+<% form_tag :action => 'process_login' do %>
 <!--[form:user]-->
 <p><label for="email">Email:</label><br/>
 <%= text_field_tag :email, params[:email]  %></p>
