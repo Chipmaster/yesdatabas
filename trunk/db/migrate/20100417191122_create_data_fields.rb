@@ -1,4 +1,4 @@
-class CreateDataField < ActiveRecord::Migration
+class CreateDataFields < ActiveRecord::Migration
   def self.up
     create_table :data_field do |t|
       t.string :value
