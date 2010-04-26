@@ -6,10 +6,14 @@ class UsersController < ApplicationController
   # GET /users.xml
   def index
     @users = User.all
+    if session[:adminuser]
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @users }
+      respond_to do |format|
+        format.html # index.html.erb
+        format.xml  { render :xml => @users }
+      end
+    else
+      redirect_to("users/users/"+session[:id].to_s)
     end
   end
 
@@ -27,29 +31,37 @@ class UsersController < ApplicationController
   # GET /users/new
   # GET /users/new.xml
   def new
-         
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @user }
+    if session[:adminuser]
+  
+      respond_to do |format|
+        format.html # new.html.erb
+        format.xml  { render :xml => @user }
+      end
+    else
+      redirect_to("users/users/"+session[:id].to_s)
     end
   end
 
   def create
-    @user = User.new(params[:user])
-    @user.password = params[:password]
-    @user.email = params[:email]
-    @user.usertype = params[:usertype]
-    @user.save!
-    
-    respond_to do |format|
-      if @user.save
-        flash[:notice] = 'User was successfully created.'
-        format.html { redirect_to(@user) }
-        format.xml  { render :xml => @user, :status => :created, :location => @user }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+    if session[:adminuser]
+      @user = User.new(params[:user])
+      @user.password = params[:password]
+      @user.email = params[:email]
+      @user.usertype = params[:usertype]
+      @user.save!
+      
+      respond_to do |format|
+        if @user.save
+          flash[:notice] = 'User was successfully created.'
+          format.html { redirect_to(@user) }
+          format.xml  { render :xml => @user, :status => :created, :location => @user }
+        else
+          format.html { render :action => "new" }
+          format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        end
       end
+    else
+      redirect_to("users/users/"+session[:id].to_s)
     end
   end
 
@@ -79,12 +91,16 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.xml
   def destroy
-    @user = User.find(params[:id])
-    @user.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(users_url) }
-      format.xml  { head :ok }
+    if session[:adminuser]
+      @user = User.find(params[:id])
+      @user.destroy
+      
+      respond_to do |format|
+        format.html { redirect_to(users_url) }
+        format.xml  { head :ok }
+      end
+    else
+      redirect_to("users/users/"+session[:id].to_s)
     end
   end
 end
