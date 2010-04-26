@@ -13,18 +13,22 @@ class UsersController < ApplicationController
         format.xml  { render :xml => @users }
       end
     else
-      redirect_to("users/users/"+session[:id].to_s)
+      redirect_to :action => "show", :id => session[:id].to_s
     end
   end
 
   # GET /users/1
   # GET /users/1.xml
   def show
-    @user = User.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @user }
+    if (session[:id].to_s == params[:id].to_s) || session[:adminuser]
+      @user = User.find(params[:id])
+      
+      respond_to do |format|
+        format.html # show.html.erb
+        format.xml  { render :xml => @user }
+      end
+    else
+      redirect_to :action => "show", :id => session[:id].to_s
     end
   end
 
@@ -38,7 +42,7 @@ class UsersController < ApplicationController
         format.xml  { render :xml => @user }
       end
     else
-      redirect_to("users/users/"+session[:id].to_s)
+      redirect_to :action => "show", :id => session[:id].to_s
     end
   end
 
@@ -61,7 +65,7 @@ class UsersController < ApplicationController
         end
       end
     else
-      redirect_to("users/users/"+session[:id].to_s)
+      redirect_to :action => "show", :id => session[:id].to_s
     end
   end
 
@@ -70,7 +74,7 @@ class UsersController < ApplicationController
     if (session[:id].to_s == params[:id].to_s) || session[:adminuser]
       @user = User.find(params[:id])
     else
-      redirect_to("users/users/"+session[:id].to_s)
+      redirect_to :action => "edit", :id => session[:id].to_s
     end
   end
 
