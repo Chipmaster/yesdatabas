@@ -10,6 +10,7 @@ class LoginController < ApplicationController
         session[:adminuser] = true
         redirect_to :controller => :users
       else
+        session[:adminuser] = false
         redirect_to :controller => :users, :action => user.id
       end
     else
