@@ -67,7 +67,11 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = User.find(params[:id])
+    if session[:id] == params[:id] or session[:adminuser]
+      @user = User.find(params[:id])
+    else
+      redirect_to("users/users/"+session[:id].to_s)
+    end
   end
 
 
