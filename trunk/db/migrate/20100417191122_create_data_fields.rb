@@ -9,6 +9,6 @@ class CreateDataFields < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :data_field
+    drop_table :data_fields
   end
 end
