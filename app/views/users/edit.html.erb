@@ -17,10 +17,6 @@
     <%= f.label :lastname %>
     <%= f.text_field :lastname %>
   </p>
-  <p>
-    <%= f.label :usertype %>
-    <%= f.text_field :usertype %>
-  </p>
   <% @fieldtypes.each do |field| %>
     <p>
     <%= label_tag("custom[#{field.name}]", field.name) %>
