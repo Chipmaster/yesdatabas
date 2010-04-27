@@ -16,15 +16,19 @@
 </p>
 
 <p>
-  <b>Password Hash:</b>
-  <%=h @user.password_hash %>
-</p>
-
-<p>
   <b>Usertype:</b>
   <%=h @user.usertype %>
 </p>
 
+<% @fieldtypes.each do |field| %>
+  <p>
+  <b><%=h field.name %>:</b>
+  <% temp = field.data_fields.find(:first, :conditions => {:user_id => params[:id]}) %>
+  <% if temp != nil%>
+    <%= temp.value %>
+  <% end %>
+  </p>
+<% end %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

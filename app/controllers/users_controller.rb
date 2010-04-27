@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     if session[:adminuser]
+      @fields = FieldType.find(:all)
 
       respond_to do |format|
         format.html # index.html.erb
@@ -22,7 +23,9 @@ class UsersController < ApplicationController
   def show
     if (session[:id].to_s == params[:id].to_s) || session[:adminuser]
       @user = User.find(params[:id])
-      
+      @fieldtypes = FieldType.find(:all)
+      @fields = @user.data_fields
+
       respond_to do |format|
         format.html # show.html.erb
         format.xml  { render :xml => @user }
@@ -36,7 +39,6 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     if session[:adminuser]
-  
       respond_to do |format|
         format.html # new.html.erb
         format.xml  { render :xml => @user }
@@ -53,7 +55,7 @@ class UsersController < ApplicationController
       @user.email = params[:email]
       @user.usertype = params[:usertype]
       @user.save!
-      
+    
       respond_to do |format|
         if @user.save
           flash[:notice] = 'User was successfully created.'
@@ -73,6 +75,7 @@ class UsersController < ApplicationController
   def edit
     if (session[:id].to_s == params[:id].to_s) || session[:adminuser]
       @user = User.find(params[:id])
+      @fieldtypes = FieldType.all
     else
       redirect_to :action => "edit", :id => session[:id].to_s
     end
@@ -85,7 +88,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     respond_to do |format|
-      if @user.update_attributes(params[:user])
+      if @user.update_attributes(params[:user]) and FieldType.update_custom(@user, params["custom"])
         flash[:notice] = 'User was successfully updated.'
         format.html { redirect_to(@user) }
         format.xml  { head :ok }
@@ -102,7 +105,7 @@ class UsersController < ApplicationController
     if session[:adminuser]
       @user = User.find(params[:id])
       @user.destroy
-      
+
       respond_to do |format|
         format.html { redirect_to(users_url) }
         format.xml  { head :ok }
