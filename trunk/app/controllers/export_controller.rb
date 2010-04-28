@@ -3,11 +3,16 @@ class ExportController < ApplicationController
 require 'fastercsv'
 
 	def dump_csv
-	  @users = User.find(:all, :order => "Email")
+	  @users = User.find(:all, :order => "Usertype")
 	  @user = User.find(:first);
-	  @outfile = "members_" + Time.now.strftime("%m-%d-%Y") + ".csv"
+	  @outfile = "members_" + Time.now.strftime("%m-%d-%Y") + ".tsv"
 	  @fieldtypes = FieldType.find(:all)
 	  fieldnames = []
+	  #@datafield.each do |df|
+		#if(df.value)
+		#	fieldnames.push(df.id)
+		#end
+	  #end
 	  fieldnames.push("Last Name" + "\t")
 	  fieldnames.push("First Name"+ "\t")
 	  fieldnames.push("Email"+ "\t")
