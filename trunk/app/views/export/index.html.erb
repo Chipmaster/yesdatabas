@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag :all %>
+
+
+
+
+<%= form_tag({:action => "dump_csv"}, {:id => 'my_form'}) %>
+<center>
+<a href="" onClick="$$('#my_form input.check').each(function(box){box.checked=true});return false;"/>SELECT ALL</a>
+<a href="" onClick="$$('#my_form input.check').each(function(box){box.checked=false});return false;"/>DESELECT ALL</a>
+<table border=1>
+ <tr>
+	<th>Select </th>
+    <th>Fields</th>
+
+  </tr>
+  <tr>
+	<td><input id="First Name" name="First Name" value="",  type="checkbox", class = "check"></td>
+    <td><%="First Name" %></td>
+  </tr>
+  <tr>
+	<td><input id="Last Name" name="Last Name" value="",  type="checkbox", class = "check"></td>
+    <td><%="Last Name" %></td>
+  </tr>
+  <tr>
+	<td><input id="Email" name="Email" value="",  type="checkbox", class = "check"></td>
+    <td><%= "Email" %></td>
+  </tr>
+  <tr>
+	<td><input id="Usertype" name="Usertype" value="",  type="checkbox", class = "check"></td>
+    <td><%="Usertype" %></td>
+  </tr>
+<% @fieldtypes.each do |field| %>
+  <tr>
+  	<td><input id="field.name" name="field.name" value="",  type="checkbox", class = "check"></td>
+    <td><%=field.name %></td>
+  </tr>
+<% end %>
+</table>
+<%= submit_tag "Submit Selected and Export to CSV" %>
+</center>
+<%= link_to 'Back', users_path %>
+
