@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
 
-  #before_filter :login_required
+  before_filter :login_required
 
+  #If admin, display admin control index
   # GET /users
   # GET /users.xml
   def index
@@ -18,6 +19,7 @@ class UsersController < ApplicationController
     end
   end
 
+  #Display appropriate user data
   # GET /users/1
   # GET /users/1.xml
   def show
@@ -35,6 +37,7 @@ class UsersController < ApplicationController
     end
   end
 
+  #Display user creation page
   # GET /users/new
   # GET /users/new.xml
   def new
@@ -48,6 +51,7 @@ class UsersController < ApplicationController
     end
   end
 
+  #On new creation set email and password and user type information to model
   def create
     if session[:adminuser]
       @user = User.new(params[:user])
@@ -71,6 +75,7 @@ class UsersController < ApplicationController
     end
   end
 
+  #Show user edit page
   # GET /users/1/edit
   def edit
     if (session[:id].to_s == params[:id].to_s) || session[:adminuser]
@@ -81,7 +86,7 @@ class UsersController < ApplicationController
     end
   end
 
-
+  #Pass updated terms to custom update
   # PUT /users/1
   # PUT /users/1.xml
   def update
@@ -99,6 +104,7 @@ class UsersController < ApplicationController
     end
   end
 
+  #Remove a given user if admin
   # DELETE /users/1
   # DELETE /users/1.xml
   def destroy
