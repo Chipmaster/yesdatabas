@@ -2,6 +2,8 @@ class LoginController < ApplicationController
   def login
   end
 
+  #Call the model to authenticate the user email and password 
+  #Set session data appropriately
   def process_login
     user = User.find_by_email(params[:email])
     if user != nil && user.password == params[:password]
@@ -19,6 +21,8 @@ class LoginController < ApplicationController
     end
   end
 
+  #Clear session data on logout
+  #Redirect on login
   def logout
     reset_session
     flash[:notice] = "Successfully logged out"
