@@ -8,6 +8,7 @@ class FieldType < ActiveRecord::Base
   end
 
   def self.update_custom(user, params)
+    #This updates or creates the custom field for a user and a fieldtype.
     @fields = user.data_fields
     @fieldtypes = FieldType.all
     @fieldtypes.each do |field|
