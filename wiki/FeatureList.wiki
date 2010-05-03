@@ -13,9 +13,3 @@ Feature List:
   * Allows users to browse other profile pages that display specific user information as decided by the administrator.  For example, some organizations may not want to disclose cell phone numbers or home addresses.  For our test case, we will include an Alumni Account that allows any alumni to view all of the members' pages.
 
   * Embedded google map to post any group events, meetings, or deadlines. 
-
-  * In our example case, each member will have an attendance variable that will be modified when attendance is updated.  
-
-  * Accept input from Excel CSV format, specifically Google Docs, to allow for an integration of data from multiple web pages.  For example, in Red and White, each member must submit an "Event Wrap Up Form" for each event they attend.  By accepting raw input from Google Docs, personnel time will be saved.  With each input from Google Docs, the database will also update event attendance.
-
-        
