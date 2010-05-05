@@ -1,12 +1,10 @@
 <%= stylesheet_link_tag :all %>
 
-
-
-
+<% # A form is made has two columns, including a checkbox and a String %>
+<% # I used the check_box helper, so all I need to specify is a unique ID %>
+<% # I chose to specify a beginning state, so all fields are selected when the page is loaded %>
 <%= form_tag({:action => "dump_csv"}, {:id => 'my_form'}) %>
 <center>
-<a href="" onClick="$$('#my_form input.check').each(function(box){box.checked=true});return false;"/>SELECT ALL</a>
-<a href="" onClick="$$('#my_form input.check').each(function(box){box.checked=false});return false;"/>DESELECT ALL</a>
 <table border=1>
  <tr>
 	<th>Select </th>
@@ -14,29 +12,35 @@
 
   </tr>
   <tr>
-	<td><input id="field_id" name="First Name" value="true",  type="checkbox", class = "check"></td>
+	<td><%= check_box_tag(:firstname, 1, checked = 'checked') %></td>
     <td><%="First Name" %></td>
   </tr>
   <tr>
-	<td><input id="field_id" name="Last Name" value="true",  type="checkbox", class = "check"></td>
+	<td><%= check_box_tag(:lastname, 1, checked = 'checked') %></td>
     <td><%="Last Name" %></td>
   </tr>
   <tr>
-	<td><input id="field_id" name="Email" value="true",  type="checkbox", class = "check"></td>
+	<td><%= check_box_tag(:email, 1, checked = 'checked') %></td>
     <td><%= "Email" %></td>
   </tr>
   <tr>
-	<td><input id="field_id" name="Usertype" value="true",  type="checkbox", class = "check"></td>
+	<td><%= check_box_tag(:usertype, 1, checked = 'checked') %></td>
     <td><%="Usertype" %></td>
   </tr>
+  
+  <% # Because Ruby doesn't like duplicate ID's, I need to store all of the %>
+  <% # field names in a hash.  %>
 <% @fieldtypes.each do |field| %>
   <tr>
-  	<td><input id=field_id" name="field[field_id]" value="true",  type="checkbox", class = "check"></td>
-    <td><%=field.name %></td>
+	<% h = field.name %>
+  	<td><%= check_box_tag("custom[#{field.name}]", 1, checked = 'checked') %></td>
+    <td><%= h %></td>
   </tr>
 <% end %>
 </table>
 <%= submit_tag "Submit Selected and Export to CSV" %>
-</center>
+<br>
 <%= link_to 'Back', users_path %>
+</br>
+</center>
 
