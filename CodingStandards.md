@@ -1,0 +1,1 @@
+http://www.caliban.org/ruby/rubyguide.shtml#style

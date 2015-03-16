@@ -1,0 +1,2 @@
+## Elevator Summary: ##
+Yesdatabas aims to create a customizable and intuitive approach to storing, maintaining, and formatting personnel data.  It will integrate report summaries with custom formatting to cut down on administrative overhead for organizations wishing to keep track of member data.  By allowing administrators to customize the interface as well as data stored, Yesdatabas will be able to mold to the needs of different groups.  Finally, by providing utilities to export the data it stores to popular formats, Yesdatabas frees you to use your data how you want.
